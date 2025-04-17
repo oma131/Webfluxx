@@ -203,11 +203,11 @@
   gap: 24px;
 
 }
-/* .wrap {
+.wrap {
   display: flex;
   justify-content: space-between;
   
-} */
+}
 .text-service > h1 > span {
   color: #7f2736;
   font-size: 40px;
@@ -378,7 +378,7 @@
   justify-content: space-between;
   align-items: center;
   height: 161px;
-
+  margin-bottom: 2rem;
 }
 .project-top-2{
   display: flex;
@@ -471,15 +471,19 @@
 }
 .arrows {
   display: flex;
+  align-items: end;
   gap: 1rem;
+  padding-bottom: 2rem;
 }
 .arrow {
   background: none;
-  border: none;
+  border: 1px solid #000000;
+  border-radius: 100%;
   font-size: 1.5rem;
   cursor: pointer;
-  color: #007bff;
+  color: #000000;
   transition: color 0.3s;
+  padding: 1rem;
 }
 .arrow:hover {
   color: #9F9C9C;
@@ -1343,17 +1347,20 @@ textarea { resize: vertical; min-height: 120px; }
     background: transparent;
     color: #333;
   }
+
   .card {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    height: 200px; 
+    
+    /* background:red; */
   }
   .card img {
-    width: 100%;  
-    /* background: red;            same height for all */
+    width: 100%;            same height for all
     object-fit: contain;
     flex-shrink: 0;
+    height: 300px; 
+    border-radius: 25px;
   }
   
   .card-content .actions button {
