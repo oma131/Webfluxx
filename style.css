@@ -1445,6 +1445,8 @@ textarea { resize: vertical; min-height: 120px; }
   gap: 1rem;
   margin-bottom: 1.5rem;
   align-items: stretch;
+  padding-left: 75px;
+  padding-right: 75px;
 
 }
 /* “Large” and “Small” cards */
@@ -1511,7 +1513,11 @@ textarea { resize: vertical; min-height: 120px; }
 
 /* Small‑screen: stack cards, move content below image */
 @media (max-width: 768px) {
-  .card-row { flex-direction: column; }
+  .card-row { 
+    flex-direction: column; 
+    padding-left: 24px;
+    padding-right: 24px;
+  }
   .card-content {
     position: static;
     background: transparent;
