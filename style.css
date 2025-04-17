@@ -32,7 +32,6 @@
     padding: 16.5px 24px;
     cursor: pointer;
     color: #ffffff;
-    margin-top: 32px;
   }
   .btn-wrap {
     width: 186px;
@@ -191,9 +190,10 @@
     padding: 42px 75px;
   }
   .service-container{
-    padding: 78px;
-    
+    padding: 75px;
+    /* background:red; */
   }
+
   .vect-head{
     color: #575757;
     width: 76px;
@@ -272,6 +272,13 @@
 }
 
 .service-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+}
+.service-cards6 {
+  /* background: yellow; */
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -675,8 +682,9 @@ height: 14px;
 
 /* Section container styling */
 .responsive-section {
+  /* background:blue; */
   padding: 4.688rem;
-  width: 53.5rem;
+  width:100%;
   border-radius: 8px;
 }
 /* Header styling with two different colors */
@@ -834,6 +842,14 @@ height: 14px;
         gap: 1rem;
       
       }
+      .service-cards6 {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+      
+      }
       .service-container{
         padding: 24px
       }
@@ -967,7 +983,7 @@ height: 14px;
         flex-direction: column;
         width: 100%;
         align-item: center;
-        margin-top: 48px;
+        margin-top: 42px;
         /* background: blue; */
       
       }
@@ -1317,6 +1333,9 @@ height: 14px;
     font-size: 1rem;
     color: #555;
   }
+  .footer-rights {
+    width: 70%;
+  }
   /* Media Query: On small screens hide desktop layout and show mobile layout */
   @media (max-width: 768px) {
     .desktop-layout {
@@ -1329,6 +1348,13 @@ height: 14px;
       padding-top: 2rem;
       margin-bottom: 4rem;
     }
+    .footerend-wrapper {
+      width: 334px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between
+    }
+    
     
   }
 
