@@ -1,4 +1,8 @@
 /* Basic Reset */
+@font-face {
+  font-family: PP Neue Corp;
+  src: url(PPNeueCorp-NormalMedium-BF6732c5c5212e9.otf)
+}
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +21,9 @@
     padding: 16.5px 24px;
     cursor: pointer;
     color: #ffffff;
+  }
+  .txt {
+    font-family: PP Neue Corp;
   }
   .lta-btn {
     background-color: #000000;
@@ -147,17 +154,20 @@
 
    /* Hero section styling */
     .hero {
+    max-width: 100%;
+    height: 100vh;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 100vh;
-    background: #ffffff;
   }
   .hero-wrapper {
-    padding-left: 240px;
-    padding-right: 240px;
+    
+    width: 960px;
+    height: 482px;
+
   }
   .hero h3 {
     font-size: 18px;
@@ -167,20 +177,27 @@
     font-size: 18px;
   }
   .hero .typing {
-    font-size: 90px;
+    font-family: PP Neue Corp;
     font-weight: 500;
-    color: #000000;
+    font-size: 90px;
+    line-height: 107%;
+    letter-spacing: 0%;
+    text-align: center;
+    height: 240px;
+    
   }
   .hero-paragraph {
     padding: 42px 75px;
   }
   .service-container{
     padding: 78px;
-    /* background: yellow; */
+    
   }
-  .service-container{
-    padding: 78px;
+  .vect-head{
     /* background: yellow; */
+    width: 76px;
+    display: flex;
+    justify-content: space-between;
   }
 
   
@@ -358,6 +375,7 @@
   width: 295px;
   height: 56px;
   gap: 14px;
+  margin: auto;
 }
 .project-text-2 {
   font-family: PP Neue Corp;
@@ -372,7 +390,9 @@
   width: 100%;
   padding: 78px;
   /* background: green; */
+  margin: auto;
 }
+
 .project-top{
   display: flex;
   justify-content: space-between;
@@ -498,13 +518,13 @@
 }
 /* Testimonial Items */
 .testimonial-item {
-  background: #e9ecef;
+  background: #F5F5F5;
   border-radius: 4px;
   padding: 1.5rem;
   margin: 0 0.5rem;
   flex: 0 0 100%; /* Default to full width (for mobile) */
-  width: 344px;
-  height: 390px;
+  /* width: 344px; */
+  /* height: 390px; */
   gap: 27.18px;
 
 }
@@ -513,11 +533,13 @@
   line-height: 1.5;
   margin-bottom: 1rem;
   color: #333;
+  margin-top: 2rem;
 }
 .testimonial-author {
   font-weight: bold;
   color: #555;
   text-align: left;
+  
 }
 /* Media Query for Larger Screens */
 @media (min-width: 768px) {
@@ -590,7 +612,7 @@
 /* Section container styling */
 .responsive-section {
   padding: 4.688rem;
-  max-width: 53.5rem;
+  width: 53.5rem;
   border-radius: 8px;
 }
 /* Header styling with two different colors */
@@ -609,7 +631,8 @@
 .responsive-section p {
   font-size: 1.5rem;
   color: #555;
-  margin-top: 1rem;
+  margin-top: 24px;
+  margin-bottom: 32px;
 }
 /* Responsive adjustments for smaller screens */
 @media (max-width: 600px) {
@@ -636,6 +659,12 @@
     flex-direction: column;
     padding: 24px;
   }
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
 }
 
 
@@ -647,47 +676,62 @@
       .overlay-text {
         display:none
       }
-       .hero {
-        height: 100%;
+      .hero {
         /* background: blue; */
-       }
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
       .hero-wrapper {
+        /* background: red; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         padding: 0px 24px;
-        margin-top: 3rem;
+        width: 342px;
+        height: 700px;
+
       }
       .hero h3 {
         font-size: 10px;
         font-weight: 600;
       }
-      .hero p {
+      /* .hero p {
         font-weight: 400;
         font-size: 16px;
         line-height: 127%;
         letter-spacing: 0%;
         text-align: center;
 
-      }
+      } */
       .btn-wrapper{
         display: flex;
         flex-direction: column;
-        width: 342px;
-        height: 126px;
         gap: 14px;
 
       }
       .hero .typing {
-        font-size: 48px;
+        font-family: PP Neue Corp;
         font-weight: 500;
-        color: #000000;
-        width: 342px;
-        
+        font-size: 48px;
+        line-height: 107%;
+        letter-spacing: 0%;
+        text-align: center;
         height: 153px;
-        /* background: red; */
         
       }
+      
       .hero-paragraph {
+        /* background: yellow; */
+        text-align: center;
         margin-top: 75px;
         width: 328px;
+        height: 140px;
         font-weight: 400;
         font-size: 16px;
         line-height: 127%;
@@ -697,6 +741,7 @@
       }
 
       .service-cards {
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -854,6 +899,7 @@
   #typewriter {
     color:#9F9C9C;
     font-weight: bold;
+    font-family: PP Neue Corp;
   }
   /* Typewriter cursor styling */
   .cursor {
@@ -870,6 +916,7 @@
   .highlight {
     color:#9F9C9C;
     font-weight: bold;
+    font-family: PP Neue Corp;
   }
   /* Call-to-Action Button */
   .btn-hero {
@@ -889,6 +936,27 @@
     padding: 16.5px 24px;
     cursor: pointer;
     color: #000000;
+  }
+  .btn-test {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px #575757 solid;
+    border-radius: 25px;
+    padding: 16.5px 24px;
+    cursor: pointer;
+    color: ##575757;
+  }
+  .btn-view {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px black solid;
+    border-radius: 25px;
+    padding: 16.5px 24px;
+    cursor: pointer;
+    color: #000000;
+    margin: auto;
+    display: flex;
+    justify-content: center
   }
   .btn-card {
     padding: 0.5rem 1rem;
