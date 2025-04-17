@@ -211,6 +211,12 @@
     display: flex;
     justify-content: space-between;
   }
+  .vect-head4{
+    color: #575757;
+    width: 58px;
+    display: flex;
+    justify-content: space-between;
+  }
 
   
 .services-header {
@@ -648,13 +654,16 @@ height: 14px;
   
 }
 .responsive-section h1 .first-part {
+  font-family: PP Neue Corp;
   color: #000000; 
 }
 .responsive-section h1 .second-part {
+  font-family: PP Neue Corp;
   color: #575757;
 }
 /* Paragraph styling */
 .responsive-section p {
+  font-family: PP Neue Corp;
   font-size: 1.5rem;
   color: #555;
   margin-top: 24px;
@@ -1030,16 +1039,27 @@ height: 14px;
   .footer-newsletter {
     background: white;
     color: black;
-    border-radius: 15px;
+    height: 366px;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer-newsletter h3{
+    width:232px;
   }
   .footer-newsletter h3,
   .footer-header h3,
   .footer-links h3 {
     margin-bottom: 0.5rem;
+    font-family: PP Neue Corp;
+    font-size: 32px;
   }
   .footer-newsletter p,
   .footer-header p {
     margin-bottom: 1rem;
+    font-size: 18px;
+    /* width: 402px; */
   }
   /* Input group: position button inside the input box */
   .input-group {
@@ -1217,6 +1237,7 @@ height: 14px;
       padding-top: 2rem;
       margin-bottom: 4rem;
     }
+    
   }
 
     /* Section Wrapper */
