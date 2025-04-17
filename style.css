@@ -1031,6 +1031,32 @@ height: 14px;
   .footer-part {
     padding: 1rem;
   }
+  .f-button {
+    padding: 20px 24px;
+    font-size: 18px;
+    border-radius: 50px;
+    border: none;
+  }
+  .footer-end {
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 75px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .footerend-wrapper {
+    width: 334px;
+    display: flex;
+    justify-content: space-between
+  }
+  .footerend-wrapper li {
+    list-style-type: none;
+  }
+  .footerend-wrapper li a {
+    color: white;
+  }
   
   /* Default small screen order:
      HTML order: Newsletter, Header, Links 
@@ -1039,27 +1065,45 @@ height: 14px;
   .footer-newsletter {
     background: white;
     color: black;
-    height: 366px;
     border-radius: 11px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
   }
-  .footer-newsletter h3{
+  .footer-newsletter .f-head{
     width:232px;
   }
-  .footer-newsletter h3,
-  .footer-header h3,
-  .footer-links h3 {
+  .footer-newsletter .f-head,
+  .footer-header .f-head {
     margin-bottom: 0.5rem;
     font-family: PP Neue Corp;
     font-size: 32px;
   }
+  .footer-links .f-head{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+  }
+  .footer-links ul{
+    width: 89px;
+    height: 90px;
+    margin-top: 24px;
+  }
+  .footer-links ul li{
+    margin-top: 5px;
+  }
   .footer-newsletter p,
-  .footer-header p {
-    margin-bottom: 1rem;
+  .footer-header p, 
+  .footer-links p {
+    margin:32px 0px;
     font-size: 18px;
     /* width: 402px; */
+    font-weight: 400;
+    line-height: 127%;
+    letter-spacing: 0%;
+
   }
   /* Input group: position button inside the input box */
   .input-group {
@@ -1068,9 +1112,9 @@ height: 14px;
   }
   .input-group input {
     width: 100%;
-    padding: 10px 50px 10px 10px;
+    padding: 28px 32px 28px 32px;
     border: 1px solid black;
-    border-radius: 25px;
+    border-radius: 50px;
     font-size: 1rem;
   }
   .input-group button {
@@ -1081,9 +1125,9 @@ height: 14px;
     border: none;
     background: #000000;
     color: #fff;
-    padding: 0 15px;
-    border-radius: 25px;
-    margin: 5px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    margin: 12px;
     cursor: pointer;
     font-size: 1rem;
   }
