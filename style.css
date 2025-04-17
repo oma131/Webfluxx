@@ -217,6 +217,12 @@
     display: flex;
     justify-content: space-between;
   }
+  .vect-head5{
+    color: #575757;
+    width: 45px;
+    display: flex;
+    justify-content: space-between;
+  }
 
   
 .services-header {
