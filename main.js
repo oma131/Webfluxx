@@ -147,3 +147,17 @@ const phrases = [
       }
     });
   });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const btns = document.querySelectorAll('.btn-row button');
+    // Make first button active initially
+    if (btns.length) btns[0].classList.add('active');
+
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // remove active from all, then add to clicked
+        btns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  });
