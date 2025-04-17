@@ -15,9 +15,9 @@ menuToggle.addEventListener('click', () => {
 });
 
 const phrases = [
-  "Design Solutions for High-Growth Brands",
-  "Web Solutions for High-Growth Brands",
-  "Marketing Solutions for High-Growth Brands"
+  "Design ",
+  "Web ",
+  "Marketing "
   ];
 
   let phraseIndex = 0;
@@ -145,37 +145,5 @@ const phrases = [
         // Set maxHeight to the scrollHeight to animate opening
         content.style.maxHeight = content.scrollHeight + "px";
       }
-    });
-  });
-
-   // Ensure the DOM is fully loaded
-   document.addEventListener('DOMContentLoaded', function () {
-    // Only add event listeners if the desktop layout is present.
-    const buttons = document.querySelectorAll('.buttons-column button');
-    const cardIcon = document.querySelector('.desktop-layout .card .card-icon');
-    const cardTitle = document.querySelector('.desktop-layout .card .card-title');
-    const cardText = document.querySelector('.desktop-layout .card .card-text');
-
-    // Debug: Log to see if elements are found
-    console.log('Buttons found:', buttons.length);
-    console.log('Card Icon:', cardIcon);
-    console.log('Card Title:', cardTitle);
-    console.log('Card Text:', cardText);
-
-    // Update the card's content when a button is clicked
-    buttons.forEach(button => {
-      button.addEventListener('click', function() {
-        const icon = this.getAttribute('data-icon');
-        const title = this.getAttribute('data-title');
-        const text = this.getAttribute('data-text');
-
-        // Debug: Log the new content from the button
-        console.log('Updating card with:', icon, title, text);
-
-        // Update the card content
-        if (cardIcon) cardIcon.textContent = icon;
-        if (cardTitle) cardTitle.textContent = title;
-        if (cardText) cardText.textContent = text;
-      });
     });
   });
