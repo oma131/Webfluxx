@@ -252,6 +252,10 @@
   gap: 1rem;
 
 }
+.arrside {
+  width: 14px;
+height: 14px;
+}
 .service-cards > .service-card {
   width: 412px;
   height: 374px;
@@ -293,9 +297,10 @@
   border: none;
 }
 .card-img{
-  width: 20%;
+  width: 52px;
 }
 .service-card > h1 {
+  font-family: PP Neue Corp;
   color: #fff;
   /* margin-top: 115px;
   margin-left: 50px; */
@@ -318,8 +323,8 @@
 
 }
 .service-card > p {
-  color: #fff;
-  font-size: 20px;
+  color: #575757;
+  font-size: 16px;
   /* margin-top: 30px;
   margin-left: 50px; */
 
@@ -359,7 +364,7 @@
   border-radius: 50%;
 }
 .text-service .btn-light {
-  width: 256px;
+  width: 270px;
   height: 56px;
   gap: 16px;
   border-radius: 100px;
@@ -368,7 +373,9 @@
   padding-bottom: 16px;
   padding-left: 24px;
   border-width: 1px;
-
+  display: flex;
+  align-items: center;
+  font-size: 18px;
 }
 .btn-wrapper{
   display: flex;
