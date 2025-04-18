@@ -1,7 +1,7 @@
 /* Basic Reset */
 @font-face {
   font-family: PP Neue Corp;
-  src: url(PPNeueCorp-NormalMedium-BF6732c5c5212e9.otf)
+  src: url(PPNeueCorp-CompactMedium-BF6732c5c5cbf6e.otf)
 }
 * {
     margin: 0;
@@ -163,6 +163,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
+
   }
   .hero-wrapper {
     
