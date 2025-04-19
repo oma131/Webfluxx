@@ -126,18 +126,16 @@
 
   }
   .hero-wrapper {
-    
     width: 960px;
-    height: 482px;
 
   }
-  .hero h3 {
+  /* .hero h3 {
     font-size: 18px;
     font-weight: 600;
   }
   .hero p {
     font-size: 18px;
-  }
+  } */
   .hero .typing {
     font-family: PP Neue Corp;
     font-weight: 500;
@@ -145,11 +143,16 @@
     line-height: 107%;
     letter-spacing: 0%;
     text-align: center;
-    height: 240px;
+    margin: auto;
+    margin-top: 16px;
+    /* background: blue; */
     
   }
   .hero-paragraph {
-    padding: 42px 75px;
+    margin: auto;
+    margin-top: 42px;
+    width: 810px;
+    /* background: red; */
   }
   .service-container{
     /* height: 100vh; */
@@ -220,6 +223,7 @@
   font-size: 40px;
   line-height: 127%;
   letter-spacing: 0%;
+  margin-top: 12px;
   /* background: red; */
 }
 .faqservices-header {
@@ -310,6 +314,7 @@
   font-size: 18px;
   line-height: 127%;
   letter-spacing: 0%;
+  margin-top: 24px;
 
 }
 .text-service2 > p {
@@ -485,6 +490,7 @@
   display: flex;
   align-items: center;
   font-size: 18px;
+  margin-top: 24px;
 }
 .btn-wrapper{
   display: flex;
@@ -492,6 +498,7 @@
   height: 56px;
   gap: 14px;
   margin: auto;
+  margin-top: 42px;
 }
 .project-text-2 {
   font-family: PP Neue Corp;
@@ -854,7 +861,7 @@
     padding: 0.5rem 1rem;
     background-color: #000000;
     border: none;
-    border-radius: 50px;
+    border-radius: 100px;
     padding: 16.5px 24px;
     cursor: pointer;
     color: #ffffff;
@@ -863,7 +870,7 @@
     padding: 0.5rem 1rem;
     background-color: transparent;
     border: 1px black solid;
-    border-radius: 50px;
+    border-radius: 100px;
     padding: 16.5px 24px;
     cursor: pointer;
     color: #000000;
@@ -882,15 +889,15 @@
     align-items: center;
   }
   .btn-view {
-    padding: 0.5rem 1rem;
     background-color: transparent;
     border: 1px black solid;
-    border-radius: 25px;
-    padding: 16.5px 24px;
+    border-radius: 100px;
+    padding: 16px 24px;
     cursor: pointer;
     color: #000000;
     margin: auto;
     display: flex;
+    margin-top: 42px;
     justify-content: center;
     font-size: 16px;
   }
@@ -960,22 +967,28 @@
     flex-direction: column;
     justify-content: space-around;
   }
-  .footer-newsletter .f-head{
-    width:232px;
+  .f-head2 {
+    width:333px;
+    margin-bottom: 0.5rem;
+    font-family: PP Neue Corp;
+    font-size: 48px;
+    font-weight: 500;
   }
-  .footer-newsletter .f-head,
-  .footer-header .f-head {
+  .f-head {
+    width:232px;
     margin-bottom: 0.5rem;
     font-family: PP Neue Corp;
     font-size: 32px;
+    font-weight: 500;
   }
-  .footer-links .f-head{
+  .f-head3 {
     font-weight: 700;
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0%;
 
   }
+
   .footer-links ul{
     width: 89px;
     height: 90px;
@@ -985,14 +998,14 @@
     margin-top: 5px;
   }
   .footer-newsletter p,
-  .footer-header p, 
-  .footer-links p {
+  .footer-header p {
     margin:32px 0px;
     font-size: 18px;
     /* width: 402px; */
     font-weight: 400;
     line-height: 127%;
     letter-spacing: 0%;
+    color: #575757;
 
   }
   /* Input group: position button inside the input box */
@@ -1633,7 +1646,6 @@ textarea { resize: vertical; min-height: 120px; }
     align-items: center;
     padding: 0px 24px;
     width: 342px;
-    height: 700px;
 
   }
   .hero h3 {
@@ -1652,6 +1664,9 @@ textarea { resize: vertical; min-height: 120px; }
     display: flex;
     flex-direction: column;
     gap: 14px;
+    width: 342px;
+    margin: auto;
+    margin-top: 24px;
 
   }
   .hero .typing {
@@ -1661,21 +1676,20 @@ textarea { resize: vertical; min-height: 120px; }
     line-height: 107%;
     letter-spacing: 0%;
     text-align: center;
-    height: 153px;
+    width: 342px;
     
   }
   
   .hero-paragraph {
     /* background: yellow; */
-    text-align: center;
-    margin-top: 75px;
-    width: 328px;
-    height: 140px;
+    text: center;
+    width: 342px;
+    margin: auto;
+    margin-top: 24px;
     font-weight: 400;
     font-size: 16px;
     line-height: 127%;
     letter-spacing: 0%;
-    padding: 7px;
 
   }
 
