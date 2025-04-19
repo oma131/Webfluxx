@@ -762,7 +762,6 @@
 .responsive-section {
   /* background:blue; */
   width: 1280px;
-  height: 599px;
   margin: auto;
   margin-top: 96px;
   margin-bottom: 52px;
@@ -2101,7 +2100,7 @@ textarea { resize: vertical; min-height: 120px; }
   .builtresponsive-section p {
     font-family: PP Neue Corp;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 23px;
     line-height: 127%;
     letter-spacing: 0%;
 
