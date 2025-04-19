@@ -720,6 +720,18 @@
   width: 857px;
 
 }
+.wresponsive-section {
+  /* background:blue; */
+  /* margin: auto; */
+  padding: 0px 78px;
+  margin-top: 96px;
+  margin-bottom: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 857px;
+
+}
 .responsive-section2 {
   /* background:blue; */
   width: 1280px;
@@ -751,6 +763,10 @@
 }
 /* Header styling with two different colors */
 .responsive-section h1 {
+  width: 543px;
+  height: 162px;
+}
+.wresponsive-section h1 {
   width: 543px;
   height: 162px;
 }
@@ -838,7 +854,7 @@
     padding: 0.5rem 1rem;
     background-color: #000000;
     border: none;
-    border-radius: 25px;
+    border-radius: 50px;
     padding: 16.5px 24px;
     cursor: pointer;
     color: #ffffff;
@@ -847,7 +863,7 @@
     padding: 0.5rem 1rem;
     background-color: transparent;
     border: 1px black solid;
-    border-radius: 25px;
+    border-radius: 50px;
     padding: 16.5px 24px;
     cursor: pointer;
     color: #000000;
