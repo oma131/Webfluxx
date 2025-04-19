@@ -218,6 +218,7 @@
   font-size: 40px;
   line-height: 127%;
   letter-spacing: 0%;
+  /* background: red; */
 }
 .faqservices-header {
   font-family: PP Neue Corp;
@@ -342,7 +343,7 @@
   color: #000000;
   border: 1px solid black;
 }
-.service-cards > .bservice-card {
+.bservice-card {
   width: 412px;
   height: 236px;
   padding: 32px 32px;
@@ -727,10 +728,11 @@
 /* Section container styling */
 .responsive-section {
   /* background:blue; */
-  padding-left: 75px;
-  width: 856px;
-  height: 984px;
-  gap: 52px;
+  width: 1280px;
+  height: 599px;
+  margin: auto;
+  margin-top: 96px;
+  margin-bottom: 52px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -1582,8 +1584,10 @@ textarea { resize: vertical; min-height: 120px; }
     gap: 1rem;
     margin-top: 3rem;
   }
-  .service-cards > .bservice-card {
+  .bservice-card {
     border: none;
+    /* background: red; */
+    width: 314px;
   }
 
   .overlay-text {
@@ -1677,7 +1681,10 @@ textarea { resize: vertical; min-height: 120px; }
     flex-direction: column;
     /* background: blue; */
     justify-content: space-between;
-   
+    width: 342px;
+    height: 173px;
+    gap: 24px;
+    margin-top: 64px;
   
   }
   .text-service2 {
@@ -1951,9 +1958,13 @@ textarea { resize: vertical; min-height: 120px; }
   .responsive-section {
     padding: 24px;
     width: 100%;
-    /* background: red; */
+    background: red;
     height: 679px;
     border-radius: 8px;
+    height: 564px;
+    gap: 24px;
+    margin: auto;
+
   }
   .builtresponsive-section {
     padding: 24px;
