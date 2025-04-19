@@ -153,6 +153,7 @@
   .service-container{
     /* height: 100vh; */
     padding: 0px 75px 0px 75px;
+    margin-top: 96px;
     /* background:pink; */
   }
 
@@ -243,7 +244,7 @@
   /* background: red; */
   justify-content: space-between;
   width: 481px;
-  height: 281px;
+  height: 201px;
   /* gap: 24px; */
 }
 .text-service2 {
@@ -311,7 +312,8 @@
   /* background: yellow; */
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
+  margin-top: 52px;
 
 }
 .arrside {
@@ -344,14 +346,15 @@
   border: 1px solid black;
 }
 .bservice-card {
+  /* background: yellow; */
   width: 412px;
   height: 236px;
-  padding: 32px 32px;
+  /* padding: 32px 32px; */
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: transparent;
+  /* background: transparent; */
   color: #000000;
   border-right: 1px solid #575757;
 }
@@ -1958,7 +1961,7 @@ textarea { resize: vertical; min-height: 120px; }
   .responsive-section {
     padding: 24px;
     width: 100%;
-    background: red;
+    /* background: red; */
     height: 679px;
     border-radius: 8px;
     height: 564px;
