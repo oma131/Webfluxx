@@ -143,7 +143,7 @@
     text-align: center;
     margin: auto;
     margin-top: 16px;
-    background: pink;
+    /* background: pink; */
     
   }
   .hero-paragraph {
@@ -245,7 +245,7 @@
   display: flex;
   flex-direction: column;
   /* background: red; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 481px;
   /* gap: 24px; */
 }
@@ -270,7 +270,7 @@
   justify-content: space-between;
   
 }
-.text-service > h1 > span {
+/* .text-service > h1 > span {
   color: #7f2736;
   font-size: 40px;
   font-weight: 700;
@@ -287,8 +287,8 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 180%;
-}
-.text-service > h1 {
+} */
+/* .text-service > h1 {
   color: #080809;
   font-size: 40px;
   font-weight: 700;
@@ -305,7 +305,7 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 180%;
-}
+} */
 .text-service > p {
   color: #000000;
   font-weight: 400;
@@ -315,7 +315,7 @@
   margin-top: 24px;
 
 }
-.text-service2 > p {
+/* .text-service2 > p {
   color: #000000;
   font-weight: 400;
   font-size: 18px;
@@ -330,7 +330,7 @@
   line-height: 127%;
   letter-spacing: 0%;
 
-}
+} */
 
 .service-cards {
   display: flex;
@@ -719,10 +719,8 @@
   /* margin: auto; */
   padding: 0px 78px;
   margin-top: 96px;
-  margin-bottom: 52px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 857px;
 
 }
@@ -730,7 +728,6 @@
 /* Header styling with two different colors */
 .responsive-section h1 {
   width: 543px;
-  height: 162px;
 }
 
 .responsive-section .first-part {
@@ -754,11 +751,11 @@
 
 }
 /* Paragraph styling */
-.builtresponsive-section p {
+.responsive-section p {
   font-family: PP Neue Corp;
   color: #575757;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 24px;
   line-height: 127%;
   letter-spacing: 0%; 
   margin-top: 52px;
@@ -864,7 +861,7 @@
   footer {
     background: #000000;
     color: #fff;
-    padding: 96px 78px 0px 78px;
+    padding: 96px 78px 60px 78px;
   }
   .footer-content {
     display: flex;
@@ -1282,13 +1279,15 @@ textarea { resize: vertical; min-height: 120px; }
   padding-right: 75px;
 
 }
+.card-rowwrap {
+  margin-top: 52px;
+}
 .card-row2 {
   display: flex;
   gap: 1rem;
-  margin-bottom: 1.5rem;
-  margin-top: 52px;
   align-items: stretch;
   /* background: orange; */
+  margin-top: 24px;
 
 }
 /* “Large” and “Small” cards */
@@ -1702,11 +1701,11 @@ textarea { resize: vertical; min-height: 120px; }
   }
   .service-container{
     padding: 0px 24px 0px 24px;
+    /* background: red; */
   }
   .service-container2{
     padding: 0px 24px 0px 24px;
     margin-top: 64px;
-    /* background: red; */
   }
   .text-service {
     display: flex;
@@ -1715,7 +1714,6 @@ textarea { resize: vertical; min-height: 120px; }
     justify-content: space-between;
     width: 342px;
     gap: 24px;
-    margin-top: 64px;
   
   }
   .text-service3 {
@@ -1780,6 +1778,7 @@ textarea { resize: vertical; min-height: 120px; }
     font-size: 16px;
     line-height: 127%;
     letter-spacing: 0%;
+    margin-top: 24px;
   }
   .text-service2 > p {
     color: #000000;
@@ -1846,8 +1845,8 @@ textarea { resize: vertical; min-height: 120px; }
   }
   .project-top{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     flex-direction: column;
     height: 355px;
     /* background: pink; */
@@ -1879,7 +1878,8 @@ textarea { resize: vertical; min-height: 120px; }
   }
   .project-container{
     width: 100%;
-    padding: 24px;
+    margin-top: 64px;
+    padding: 0px 24px;
     /* background: green; */
   }
   .top-right {
@@ -1888,8 +1888,8 @@ textarea { resize: vertical; min-height: 120px; }
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-item: center;
-    margin-top: 42px;
+    /* align-item: center; */
+    margin-top: 11px;
     /* background: blue; */
   
   }
@@ -1958,6 +1958,9 @@ textarea { resize: vertical; min-height: 120px; }
     color: #9F9C9C;
     border: 1px solid #9F9C9C;
   }
+  .card-rowwrap {
+    margin-top: 42px;
+  }
   .card-row2 { 
     flex-direction: column; 
     /* padding-left: 24px;
@@ -2022,17 +2025,8 @@ textarea { resize: vertical; min-height: 120px; }
     margin: auto;
 
   }
-  .builtresponsive-section {
-    padding: 24px;
-    width: 100%;
-    /* background: red; */
-    height: 679px;
-    border-radius: 8px;
-    margin-top: 64px;
-  }
-  .responsive-section .first-part, 
-  .responsive-section2 .first-part, 
-  .builtresponsive-section .first-part {
+  
+  .responsive-section .first-part {
     font-family: PP Neue Corp;
     color: #000000; 
     font-weight: 500;
@@ -2041,17 +2035,14 @@ textarea { resize: vertical; min-height: 120px; }
     width: 342px;
   
   }
-  .responsive-section h1,
-  .builtresponsive-section h1 {
+  .responsive-section h1 {
     width: 342px;
-    height: 152px;
     /* width: 100%; */
+    /* background: red; */
   }
   .responsive-section2 h1 {
     width: 246px;
   }
-  .builtresponsive-section .second-part,
-  .responsive-section2 .second-part,
   .responsive-section .second-part {
     font-family: PP Neue Corp;
     color: #575757;
@@ -2062,13 +2053,14 @@ textarea { resize: vertical; min-height: 120px; }
   
   }
   
-  .responsive-section p,
-  .builtresponsive-section p {
+  .responsive-section p {
     font-family: PP Neue Corp;
     font-weight: 500;
-    font-size: 23px;
+    font-size: 22px;
     line-height: 127%;
     letter-spacing: 0%;
+    margin-top: 24px;
+    /* background: red; */
 
   }
   .responsive-section .par {
