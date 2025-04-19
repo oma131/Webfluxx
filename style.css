@@ -32,6 +32,7 @@
     cursor: pointer;
     color: #ffffff;
     width: 186px;
+    margin-top: 42px;
   }
   .txt {
     font-family: PP Neue Corp;
@@ -252,7 +253,6 @@
   /* background: red; */
   justify-content: space-between;
   width: 481px;
-  height: 281px;
   /* gap: 24px; */
 }
 .text-service3 {
@@ -261,7 +261,6 @@
   /* background: red; */
   justify-content: space-between;
   width: 405px;
-  height: 131px;
   /* gap: 24px; */
 }
 .wrap {
@@ -606,7 +605,7 @@
 .testimonial-carousel {
   /* background: blue; */
   margin-top: 96px;
-  padding: 75px;
+  padding: 0px 75px;
 }
 /* Header and Arrow Navigation */
 .testimonial-header {
@@ -679,13 +678,7 @@
   
 }
 
-/* FAQ Section Container: using flex for two columns on larger screens */
-.faq-section {
-  /* padding: 0px 78px 0px 78px; */
-  margin: 96px 0px 96px 0px;
-  /* height: 469px; */
-  /* background: blue; */
-}
+
 .faq-wrapper {
   display: flex;
   justify-content: space-between;
@@ -712,62 +705,20 @@
   color: #555;
   width: 408px;
 }
-/* Right Column: Accordion */
-.faq-accordion {
-  flex: 1;
-  min-width: 280px;
-  width: 734px;
-
-}
-.accordion-item {
-  border-bottom: 1px solid #000;
-}
-.accordion-header {
-  color: #000000;
-  padding-bottom: 24px;
-  padding-top: 18px;
-  cursor: pointer;
-  position: relative;
-  font-family: Instrument Sans;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 127%;
-  letter-spacing: 0%;
-
-}
-.accordion-header::after {
-  content: "+"; /* Down arrow */
-  position: absolute;
-  right: 1rem;
-  transition: transform 0.3s ease;
-}
-.accordion-header.active::after {
-  content: "-";
-}
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  background: #ffffff;
-  transition: max-height 0.3s ease;
-  padding: 0 1rem;
-}
-.accordion-content p {
-  padding: 1rem 0;
-  color: #333;
-}
 
 
 /* Section container styling */
 .responsive-section {
   /* background:blue; */
-  width: 1280px;
-  margin: auto;
+  /* margin: auto; */
+  padding: 0px 78px;
   margin-top: 96px;
   margin-bottom: 52px;
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 857px;
+
 }
 .responsive-section2 {
   /* background:blue; */
@@ -1374,15 +1325,16 @@ textarea { resize: vertical; min-height: 120px; }
 .card2 {
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
   background: #fff;
   height: 300px; 
+  /* width: 100%; */
 }
 .card2 img {
   width: 100%;
   height: 300px;               
   object-fit: cover;
   flex-shrink: 0;
+  border-radius: 20px;
 }
 /* Overlayed text/buttons for large screens */
 .card-content {
@@ -1987,8 +1939,8 @@ textarea { resize: vertical; min-height: 120px; }
   }
   .card-row2 { 
     flex-direction: column; 
-    padding-left: 24px;
-    padding-right: 24px;
+    /* padding-left: 24px;
+    padding-right: 24px; */
   }
   .card-content2 {
     position: static;
@@ -2002,9 +1954,8 @@ textarea { resize: vertical; min-height: 120px; }
   .card2 {
     position: relative;
     overflow: hidden;
-    border-radius: 20px;
     width: 100%;
-    background:red;
+    /* background:red; */
   }
 
   .card2 img {
@@ -2031,18 +1982,14 @@ textarea { resize: vertical; min-height: 120px; }
 }
 
 /* Responsive font sizes */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .form-row { flex-direction: column; }
 
   .responsive-section {
-    padding: 24px;
+    padding: 0px 24px;
     width: 100%;
+    margin-top: 64px;
     /* background: red; */
-    height: 679px;
-    border-radius: 8px;
-    height: 564px;
-    gap: 24px;
-    margin: auto;
 
   }
   .responsive-section2 {
@@ -2120,7 +2067,7 @@ textarea { resize: vertical; min-height: 120px; }
 
   }
   .testimonial-carousel {
-    padding: 24px;
+    padding: 0px 24px;
     /* background: red; */
     margin-top: 64px
   }
@@ -2156,6 +2103,7 @@ textarea { resize: vertical; min-height: 120px; }
   border-radius: 10px;
   flex-wrap: wrap;
   /* background: red; */
+  width: 100%;
 }
 
 .faq-left {
@@ -2249,8 +2197,8 @@ textarea { resize: vertical; min-height: 120px; }
     flex-direction: column;
     width: 100%;
     margin: auto;
-    margin-top: 96px;
-    margin-bottom: 96px;
+    margin-top: 64px;
+    margin-bottom: 64px;
     padding: 0px 24px;
     /* background: red; */
     display: flex;
