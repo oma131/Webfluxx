@@ -337,7 +337,7 @@
 .service-cards {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 26px;
   margin-top: 52px
 
 }
@@ -520,9 +520,10 @@
 .project-container{
   width: 100%;
   /* height: 100vh; */
-  padding: 78px;
+  padding: 0px 78px;
   /* background: green; */
   margin: auto;
+  margin-top: 96px;
 }
 
 .project-top{
@@ -821,6 +822,7 @@
   font-size: 40px;
   line-height: 127%;
   letter-spacing: 0%; 
+  margin-top: 52px;
 }
 .responsive-section2 .par {
   font-family: Instrument Sans;
@@ -916,14 +918,14 @@
   footer {
     background: #000000;
     color: #fff;
+    padding: 96px 78px 0px 78px;
   }
   .footer-content {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 3rem;
-    max-width: 1200px;
-    /* margin: 0 auto; */
+    /* max-width: 1200px; */
+    /* background:red; */
   }
   .footer-part {
     padding: 1rem;
@@ -932,6 +934,7 @@
     padding: 20px 24px;
     font-size: 18px;
     border-radius: 50px;
+    margin-top: 32px;
     border: none;
   }
   .footer-end {
@@ -939,9 +942,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 75px;
     font-size: 18px;
     font-weight: 400;
+    margin-top: 132px;
   }
   .footerend-wrapper {
     width: 334px;
@@ -963,15 +966,16 @@
     background: white;
     color: black;
     border-radius: 11px;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
   .f-head2 {
     width:333px;
-    margin-bottom: 0.5rem;
     font-family: PP Neue Corp;
     font-size: 48px;
+    /* background:blue; */
     font-weight: 500;
   }
   .f-head {
@@ -986,6 +990,7 @@
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0%;
+    margin-top: 15px;
 
   }
 
@@ -997,9 +1002,18 @@
   .footer-links ul li{
     margin-top: 5px;
   }
-  .footer-newsletter p,
+  .footer-newsletter p{
+    font-family: Instrument Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 127%;
+    letter-spacing: 0%;
+    width: 402px;
+    margin-top: 24px;
+
+  }
   .footer-header p {
-    margin:32px 0px;
+    margin-top: 32px;
     font-size: 18px;
     /* width: 402px; */
     font-weight: 400;
@@ -1061,6 +1075,7 @@
   .footer-image {
     width: 100%;
     padding: 3rem;
+    margin-top: 132px;
     
   }
 
@@ -1574,7 +1589,34 @@ textarea { resize: vertical; min-height: 120px; }
       right: 0;
       padding: 2rem;
   }
-  
+  .f-head2{
+    font-family: PP Neue Corp;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 127%;
+    letter-spacing: 0%;
+    width:167px;
+
+  }
+  .footer-header p{
+    font-family: Instrument Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 127%;
+    letter-spacing: 0%;
+    margin-top: 18px;
+
+  }
+  footer{
+    padding: 34px 29px;
+  }
+  .f-button {
+    padding: 17.5px 22.5px;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 32px;
+    border: none;
+  }
 
   .navbar.active .nav-items li {
       border-bottom: 1px solid grey;
