@@ -12,7 +12,7 @@
 
   body {
     font-family: Instrument Sans;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
   }
   /* Call-to-Action Button */
@@ -153,7 +153,7 @@
   .service-container{
     /* height: 100vh; */
     padding: 0px 75px 0px 75px;
-    background:pink;
+    /* background:pink; */
   }
 
   .vect-head{
@@ -239,7 +239,7 @@
 .text-service {
   display: flex;
   flex-direction: column;
-  background: red;
+  /* background: red; */
   justify-content: space-between;
   width: 481px;
   height: 281px;
@@ -248,7 +248,7 @@
 .text-service2 {
   display: flex;
   flex-direction: column;
-  background: red;
+  /* background: red; */
   justify-content: space-between;
   width: 481px;
   height: 281px;
@@ -482,7 +482,7 @@
   width: 100%;
   /* height: 100vh; */
   padding: 78px;
-  background: green;
+  /* background: green; */
   margin: auto;
 }
 
@@ -492,7 +492,7 @@
   align-items: center;
   height: 161px;
   margin-bottom: 2rem;
-  background: blue;
+  /* background: blue; */
 }
 .project-top-2{
   display: flex;
@@ -571,7 +571,7 @@
 
 /* Carousel Section */
 .testimonial-carousel {
-  background: blue;
+  /* background: blue; */
   margin-top: 96px;
   padding: 75px;
 }
@@ -651,7 +651,7 @@
   /* padding: 0px 78px 0px 78px; */
   margin: 96px 0px 96px 0px;
   /* height: 469px; */
-  background: blue;
+  /* background: blue; */
 }
 .faq-wrapper {
   display: flex;
@@ -737,7 +737,7 @@
   justify-content: space-between;
 }
 .builtresponsive-section {
-  background:blue;
+  /* background:blue; */
   padding-left: 78px;
   margin-top: 96px;
   width: 856px;
@@ -1291,7 +1291,7 @@ textarea { resize: vertical; min-height: 120px; }
   margin-bottom: 1.5rem;
   margin-top: 52px;
   align-items: stretch;
-  background: orange;
+  /* background: orange; */
 
 }
 /* “Large” and “Small” cards */
@@ -1683,7 +1683,7 @@ textarea { resize: vertical; min-height: 120px; }
   .text-service2 {
     display: flex;
     flex-direction: column;
-    background: blue;
+    /* background: blue; */
     justify-content: space-between;
     width: 330px;
     height: 193px;
@@ -1910,7 +1910,7 @@ textarea { resize: vertical; min-height: 120px; }
     color: #333;
     padding: 0px;
     margin-top: 12px;
-    background: pink;
+    /* background: pink; */
   }
 
   .card2 {
@@ -2009,7 +2009,7 @@ textarea { resize: vertical; min-height: 120px; }
   }
   .testimonial-carousel {
     padding: 24px;
-    background: red;
+    /* background: red; */
     margin-top: 64px
   }
   .testimonial-container {
@@ -2035,7 +2035,6 @@ textarea { resize: vertical; min-height: 120px; }
 
 
 .faq-main {
-  max-width: 1200px;
   margin: auto;
   margin-top: 96px;
   margin-bottom: 96px;
@@ -2044,28 +2043,29 @@ textarea { resize: vertical; min-height: 120px; }
   gap: 3rem;
   border-radius: 10px;
   flex-wrap: wrap;
+  /* background: red; */
 }
 
 .faq-left {
   flex: 1 1 300px;
-  background: violet;
+  /* background: violet; */
 }
-.faq-left h2 {
+/* .faq-left h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #333;
-}
-.faq-left p {
+} */
+/* .faq-left p {
   font-size: 1rem;
   color: #555;
   width: 408px;
-}
+} */
 
 
 
 .faq-right {
   flex: 1 1 500px;
-  background: blue;
+  /* background: blue; */
   width: 735px;
 }
 
@@ -2078,14 +2078,18 @@ textarea { resize: vertical; min-height: 120px; }
   padding-bottom: 24px;
   font-family: Instrument Sans;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 127%;
   letter-spacing: 0%;
-
+  padding-top: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.faq-item:first-child {
+  padding-top: 0px;
+}
+
 
 /* symbol span: show + when closed, – when open */
 .faq-question .symbol::before {
@@ -2093,7 +2097,7 @@ textarea { resize: vertical; min-height: 120px; }
   transition: transform 0.2s ease;
   font-family: Instrument Sans;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 22px;
   line-height: 127%;
   letter-spacing: 0%;
 
@@ -2136,7 +2140,7 @@ textarea { resize: vertical; min-height: 120px; }
     margin-top: 96px;
     margin-bottom: 96px;
     padding: 0px 24px;
-    background: red;
+    /* background: red; */
     display: flex;
     gap: 3rem;
     flex-wrap: wrap;
@@ -2152,10 +2156,12 @@ textarea { resize: vertical; min-height: 120px; }
 
   }
 
-  .faq-left,
   .faq-right {
     flex: 1 1 100%;
-    width: 342px;
+    width:100%;
+  }
+  .faq-left {
+    flex: 1 1 100%;
   }
   .faq-question {
     cursor: pointer;
