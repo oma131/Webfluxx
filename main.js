@@ -127,26 +127,14 @@ const phrases = [
   // Initialize the carousel position
   updateCarousel();
 
-  // Select all accordion headers
-  const headers = document.querySelectorAll('.accordion-header');
-
-  headers.forEach(header => {
-    header.addEventListener('click', function () {
-      // Toggle "active" class on the header
-      this.classList.toggle('active');
-
-      // Grab the associated accordion content
-      const content = this.nextElementSibling;
-
-      // Toggle accordion height: if open, close it; if closed, open it
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        // Set maxHeight to the scrollHeight to animate opening
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-    });
-  });
+  function toggleFAQ(el) {
+    const item = el.parentElement;
+    const open = item.classList.contains('active');
+    // close all
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+    // open clicked if it was closed
+    if (!open) item.classList.add('active');
+  }
 
   document.addEventListener('DOMContentLoaded', () => {
     const btns = document.querySelectorAll('.btn-row button');

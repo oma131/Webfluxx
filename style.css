@@ -12,6 +12,8 @@
 
   body {
     font-family: Instrument Sans;
+    max-width: 1200px;
+    margin: auto;
   }
   /* Call-to-Action Button */
   .cta-btn {
@@ -107,60 +109,7 @@
     color: #fff;
   }
 
-  /* Responsive Styling */
-  @media (max-width: 768px) {
-    /* Hide navigation items and CTA by default */
-    .nav-items,
-    .cta-btn {
-      display: none;
-    }
-    .btn-wrap, .lta-btn {
-      display: block;
-    }
-    /* Show the menu toggle */
-    .menu-toggle {
-      display: block;
-      color: #000000;
-      border: 1px black solid;
-      padding: 10px 14px;
-      border-radius: 25px;
-    }
-    .nav-items li:first-child {
-        display: block;
-    }
-      
-    .btn-mobile {
-        display: block;
-        padding: 16.5px 24px;
-        border-radius: 50px;
-        border: none;
-        background-color: #000000;
-        color: #ffffff;
-        width: 123px;
-    }
-    /* When the nav is active (opened), show the items in a vertical layout */
-    .navbar.active .nav-items {
-        background: #ffffff;
-        height: 90vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 0.5rem;
-        transition: 0.5s all ease;
-        position: absolute;
-        z-index: 3;
-        top: 80px;
-        left: 0;
-        right: 0;
-        padding: 2rem;
-    }
-    
-
-    .navbar.active .nav-items li {
-        border-bottom: 1px solid grey;
-        padding-bottom: 10px;
-    }
-  }
+  
 
    /* Hero section styling */
     .hero {
@@ -202,8 +151,9 @@
     padding: 42px 75px;
   }
   .service-container{
+    /* height: 100vh; */
     padding: 0px 75px 0px 75px;
-    /* background:red; */
+    background:pink;
   }
 
   .vect-head{
@@ -263,6 +213,13 @@
 
   
 .services-header {
+  font-family: PP Neue Corp;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 127%;
+  letter-spacing: 0%;
+}
+.faqservices-header {
   font-family: PP Neue Corp;
   font-weight: 500;
   font-size: 40px;
@@ -523,8 +480,9 @@
 }
 .project-container{
   width: 100%;
+  /* height: 100vh; */
   padding: 78px;
-  /* background: green; */
+  background: green;
   margin: auto;
 }
 
@@ -534,6 +492,7 @@
   align-items: center;
   height: 161px;
   margin-bottom: 2rem;
+  background: blue;
 }
 .project-top-2{
   display: flex;
@@ -612,6 +571,8 @@
 
 /* Carousel Section */
 .testimonial-carousel {
+  background: blue;
+  margin-top: 96px;
   padding: 75px;
 }
 /* Header and Arrow Navigation */
@@ -657,14 +618,13 @@
 /* Testimonial Items */
 .testimonial-item {
   background: #F5F5F5;
-  border-radius: 4px;
-  padding: 1.5rem;
+  border-radius: 20px;
+  padding: 22px 20px;
   margin: 0 0.5rem;
   flex: 0 0 100%; /* Default to full width (for mobile) */
-  /* width: 344px; */
+  width: 344px;
   /* height: 390px; */
   gap: 27.18px;
-
 }
 .testimonial-content {
   font-size: 1rem;
@@ -685,23 +645,21 @@
   text-align: left;
   
 }
-/* Media Query for Larger Screens */
-@media (min-width: 768px) {
-  .testimonial-item {
-    flex: 0 0 calc(100%/3 - 1rem); /* Subtracting margin spacing */
-  }
-  
-  
-}
 
 /* FAQ Section Container: using flex for two columns on larger screens */
 .faq-section {
+  /* padding: 0px 78px 0px 78px; */
+  margin: 96px 0px 96px 0px;
+  /* height: 469px; */
+  background: blue;
+}
+.faq-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 2rem;
   padding: 0px 78px 0px 78px;
-  /* margin: 0 auto; */
-  margin: 96px 0px 96px 0px;
+  margin: 0 auto;
+  /* margin: 96px 0px 96px 0px; */
   height: 469px;
   /* background: red; */
 }
@@ -778,6 +736,18 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.builtresponsive-section {
+  background:blue;
+  padding-left: 78px;
+  margin-top: 96px;
+  width: 856px;
+  height: 984px;
+  gap: 52px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .responsive-section5 {
   /* background:blue; */
   padding: 3rem;
@@ -788,10 +758,14 @@
 .responsive-section h1 {
   width: 543px;
   height: 162px;
-
+}
+.builtresponsive-section h1 {
+  width: 543px;
+  height: 162px;
 }
 .responsive-section5 .first-part,
-.responsive-section .first-part {
+.responsive-section .first-part,
+.builtresponsive-section .first-part {
   font-family: PP Neue Corp;
   color: #000000; 
   font-weight: 500;
@@ -803,7 +777,8 @@
 
 }
 .responsive-section5 .second-part,
-.responsive-section .second-part {
+.responsive-section .second-part,
+.builtresponsive-section .second-part {
   font-family: PP Neue Corp;
   color: #575757;
   font-weight: 500;
@@ -814,7 +789,8 @@
 }
 /* Paragraph styling */
 .responsive-section5 p,
-.responsive-section p {
+.responsive-section p,
+.builtresponsive-section p {
   font-family: PP Neue Corp;
   color: #575757;
   font-weight: 500;
@@ -831,366 +807,8 @@
   color: #575757;
   
 }
-/* Responsive adjustments for smaller screens */
-@media (max-width: 600px) {
-  .responsive-section {
-    padding: 24px;
-    width: 100%;
-    /* background: red; */
-    height: 679px;
-    border-radius: 8px;
-  }
-  .responsive-section .first-part {
-    font-family: PP Neue Corp;
-    color: #000000; 
-    font-weight: 500;
-    font-size: 32px;
-    letter-spacing: 0%;
-    width: 342px;
-  
-  }
-  .responsive-section h1 {
-    width: 342px;
-  
-  }
-  .responsive-section .second-part {
-    font-family: PP Neue Corp;
-    color: #575757;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 127%;
-    letter-spacing: 0%;
-  
-  }
-  .responsive-section h1 {
-    width: 100%;
-  
-  }
-  .responsive-section p {
-    font-family: PP Neue Corp;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 127%;
-    letter-spacing: 0%;
-
-  }
-  .responsive-section .par {
-    font-family: Instrument Sans;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 127%;
-    letter-spacing: 0%;
-
-  }
-  .testimonial-carousel {
-    padding: 24px;
-  }
-  .testimonial-container {
-    margin-top: 42px;
-  }
-}
-
-/* Responsive: stack on top of each other on smaller screens */
-@media (max-width: 768px) {
-  .services-header {
-    font-family: PP Neue Corp;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 127%;
-    letter-spacing: 0%;
-
-  }
-  .faq-section {
-    flex-direction: column;
-    padding: 24px;
-  }
-  .wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-  }
-  .arrows {
-    display: flex;
-    align-items: end;
-    gap: 1rem;
-    margin-top: 3rem;
-  }
-  .service-cards > .bservice-card {
-    border: none;
-  }
-}
 
 
-
-
-  /* Responsive adjustment for smaller screens */
-  @media (max-width: 768px) {
-    
-      .overlay-text {
-        display:none
-      }
-      .hero {
-        /* background: blue; */
-        max-width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      .hero-wrapper {
-        /* background: red; */
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px 24px;
-        width: 342px;
-        height: 700px;
-
-      }
-      .hero h3 {
-        font-size: 10px;
-        font-weight: 600;
-      }
-      /* .hero p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 127%;
-        letter-spacing: 0%;
-        text-align: center;
-
-      } */
-      .btn-wrapper{
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-
-      }
-      .hero .typing {
-        font-family: PP Neue Corp;
-        font-weight: 500;
-        font-size: 48px;
-        line-height: 107%;
-        letter-spacing: 0%;
-        text-align: center;
-        height: 153px;
-        
-      }
-      
-      .hero-paragraph {
-        /* background: yellow; */
-        text-align: center;
-        margin-top: 75px;
-        width: 328px;
-        height: 140px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 127%;
-        letter-spacing: 0%;
-        padding: 7px;
-
-      }
-
-      .service-cards {
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 1rem;
-      
-      }
-      .service-cards6 {
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 1rem;
-      
-      }
-      .service-container{
-        padding: 0px 24px 0px 24px;
-      }
-      .text-service {
-        display: flex;
-        flex-direction: column;
-        /* background: red; */
-        justify-content: space-between;
-        width: 325px;
-        height: 281px;
-        /* gap: 24px; */
-      
-      }
-      .text-service2 {
-        display: flex;
-        flex-direction: column;
-        background: red;
-        justify-content: space-between;
-        width: 325px;
-        height: 224px;
-        /* gap: 24px; */
-      
-      }
-      /* .text-service > h5 > span {
-        width: 76px;
-        height: 17px;
-        gap: 6px;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        text-align: center;
-
-      } */
-      .text-service > h1 {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 127%;
-        letter-spacing: 0%;
-
-      }
-      .text-service2 > h1 {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 127%;
-        letter-spacing: 0%;
-
-      }
-      .text-service > p {
-        color: #000000;
-        font-family: Instrument Sans;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 127%;
-        letter-spacing: 0%;
-      }
-      .text-service2 > p {
-        color: #000000;
-        font-family: Instrument Sans;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 127%;
-        letter-spacing: 0%;
-      }
-
-      .service-cards > .service-card {
-        width: 100%;
-        border-radius: 16.75px;
-        padding-top: 56.96px;
-        padding-right: 26.8px;
-        padding-bottom: 56.96px;
-        padding-left: 26.8px;
-
-        margin-top: 1rem;
-      
-        
-      }
-      .service-cards > .service-card-3 {
-        width: 100%;
-        border-radius: 16.75px;
-        padding-top: 56.96px;
-        padding-right: 26.8px;
-        padding-bottom: 56.96px;
-        padding-left: 26.8px;
-
-        margin-top: 1rem;
-      
-        
-      }
-      .service-card > h1 {
-        color: #fff;
-        /* margin-top: 115px;
-        margin-left: 50px; */
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 127%;
-        letter-spacing: 0%;      
-      }
-      .service-card > p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 127%;
-        letter-spacing: 0%;
-      }
-      .service-card-3 > h1 {
-        color: #000000;
-        /* margin-top: 115px;
-        margin-left: 50px; */
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 127%;
-        letter-spacing: 0%;      
-      }
-      .service-card-3 > p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 127%;
-        letter-spacing: 0%;
-      }
-      .project-top{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        height: 355px;
-        /* background: pink; */
-      }
-      .project-top-2{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column-reverse;
-        padding: 24px;
-        margin-top: 64px;
-        margin-bottom: 64px;
-        /* background: pink; */
-      }
-      .project-text-2 {
-        font-family: PP Neue Corp;
-        font-weight: 500;
-        font-size: 23px;
-        line-height: 127%;
-        letter-spacing: 0%;
-      }
-      .project-text {
-        font-family: Instrument Sans;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 127%;
-        letter-spacing: 0%;
-        margin-top: 24px;
-      }
-      .project-container{
-        width: 100%;
-        padding: 24px;
-        /* background: green; */
-      }
-      .top-right {
-        height: 131px;
-        gap: 12px;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-item: center;
-        margin-top: 42px;
-        /* background: blue; */
-      
-      }
-      .top-left {
-        /* background: red; */
-        width: 100%;
-      }
-      .upbox {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        gap: 2rem;
-      
-      }
-
-  }
   
   #typewriter {
     color:#9F9C9C;
@@ -1420,30 +1038,7 @@
     margin-top: 30px;
   }
 
-  /* Media Query: Large screens */
-  @media (min-width: 768px) {
-    .footer-content {
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: space-between;
-    }
-    /* Reordering items for large screens:
-       Header: order 1, Links: order 2, Newsletter: order 3 
-    */
-    .footer-header {
-      order: 1;
-      flex: 1;
-    }
-    .footer-links {
-      order: 2;
-      flex: 1;
-    }
-    .footer-newsletter {
-      order: 3;
-      flex: 1;
-    }
-  }
-
+  
 
 
   .section-container {
@@ -1527,30 +1122,6 @@
   .footer-rights {
     width: 70%;
   }
-  /* Media Query: On small screens hide desktop layout and show mobile layout */
-  @media (max-width: 768px) {
-    .desktop-layout {
-      display: none;
-    }
-    .mobile-layout {
-      display: flex;
-    }
-    .future-wrapper {
-      padding: 0px 24px 0px 24px;
-      margin-bottom: 4rem;
-    }
-    .footerend-wrapper {
-      width: 334px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between
-    }
-    .profile-section {
-      max-width: 1000px;
-      padding: 24px;
-    }
-    
-  }
 
     /* Section Wrapper */
     .profile-section {
@@ -1599,12 +1170,6 @@
       line-height: 1.4;
     }
 
-    /* Two‑column on larger screens */
-    @media (min-width: 768px) {
-      .profile-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
 
 .future-wrapper {
   padding: 0px 75px 75px 75px;
@@ -1655,9 +1220,7 @@ textarea { resize: vertical; min-height: 120px; }
 .form-row.unequal .project { flex: 1; }
 
 /* Wrap columns on small screens */
-@media (max-width: 600px) {
-  .form-row { flex-direction: column; }
-}
+
 
 /* Custom select arrow */
 .form-group.project {
@@ -1728,7 +1291,7 @@ textarea { resize: vertical; min-height: 120px; }
   margin-bottom: 1.5rem;
   margin-top: 52px;
   align-items: stretch;
-
+  background: orange;
 
 }
 /* “Large” and “Small” cards */
@@ -1755,7 +1318,7 @@ textarea { resize: vertical; min-height: 120px; }
 .card2 {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 20px;
   background: #fff;
   height: 300px; 
 }
@@ -1811,7 +1374,7 @@ textarea { resize: vertical; min-height: 120px; }
   left: 0;
   /* background: rgba(0,0,0,0.5); */
   color: #fff;
-  padding: 1rem;
+  padding: 35px;
   width: 100%;
 }
 
@@ -1843,80 +1406,6 @@ textarea { resize: vertical; min-height: 120px; }
   border-radius: 25px;
   cursor: pointer;
   font-size: 10px;
-}
-
-/* Small‑screen: stack cards, move content below image */
-@media (max-width: 768px) {
-  .card-row { 
-    flex-direction: column; 
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .card-content {
-    position: static;
-    background: transparent;
-    color: #333;
-  }
-
-  .card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    
-    /* background:red; */
-  }
-  .card img {
-    width: 100%;            same height for all
-    object-fit: contain;
-    flex-shrink: 0;
-    height: 300px; 
-    border-radius: 25px;
-  }
-  
-  .card-content .actions button {
-    background: transparent;
-    color: #9F9C9C;
-    border: 1px solid #9F9C9C;
-  }
-  .card-row2 { 
-    flex-direction: column; 
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .card-content2 {
-    position: static;
-    background: transparent;
-    color: #333;
-  }
-
-  .card2 {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    
-    /* background:red; */
-  }
-  .card2 img {
-    width: 100%;            same height for all
-    object-fit: contain;
-    flex-shrink: 0;
-    height: 300px; 
-    border-radius: 25px;
-  }
-  
-  .card-content2 .actions button {
-    background: transparent;
-    color: #9F9C9C;
-    border: 1px solid #9F9C9C;
-  }
-  .btn-row {
-    display: flex;
-    flex-wrap: wrap;       /* wrap on small */
-    gap: 0.5rem;
-    margin-bottom: 2rem;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
 }
 
 
@@ -1959,8 +1448,576 @@ textarea { resize: vertical; min-height: 120px; }
   margin-bottom: 2rem;
   text-align: justify;
 }
+
+
+
+
+
+
+/* Media Query: Large screens */
+@media (min-width: 768px) {
+  .profile-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonial-item {
+    flex: 0 0 calc(100%/3 - 1rem); /* Subtracting margin spacing */
+    background: #F5F5F5;
+    border-radius: 20px;
+    width: 405px;
+    /* height: 468px; */
+    padding: 26px 24px;
+}
+  .footer-content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  /* Reordering items for large screens:
+     Header: order 1, Links: order 2, Newsletter: order 3 
+  */
+  .footer-header {
+    order: 1;
+    flex: 1;
+  }
+  .footer-links {
+    order: 2;
+    flex: 1;
+  }
+  .footer-newsletter {
+    order: 3;
+    flex: 1;
+  }
+}
+
+
+/* Small‑screen: stack cards, move content below image */
+@media (max-width: 768px) {
+  /* Hide navigation items and CTA by default */
+  .nav-items,
+  .cta-btn {
+    display: none;
+  }
+  .btn-wrap, .lta-btn {
+    display: block;
+  }
+  /* Show the menu toggle */
+  .menu-toggle {
+    display: block;
+    color: #000000;
+    border: 1px black solid;
+    padding: 10px 14px;
+    border-radius: 25px;
+  }
+  .nav-items li:first-child {
+      display: block;
+  }
+    
+  .btn-mobile {
+      display: block;
+      padding: 16.5px 24px;
+      border-radius: 50px;
+      border: none;
+      background-color: #000000;
+      color: #ffffff;
+      width: 123px;
+  }
+  /* When the nav is active (opened), show the items in a vertical layout */
+  .navbar.active .nav-items {
+      background: #ffffff;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.5rem;
+      transition: 0.5s all ease;
+      position: absolute;
+      z-index: 3;
+      top: 80px;
+      left: 0;
+      right: 0;
+      padding: 2rem;
+  }
+  
+
+  .navbar.active .nav-items li {
+      border-bottom: 1px solid grey;
+      padding-bottom: 10px;
+  }
+
+  .services-header {
+    font-family: PP Neue Corp;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 127%;
+    letter-spacing: 0%;
+
+  }
+  .faqservices-header {
+    font-family: PP Neue Corp;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 127%;
+    letter-spacing: 0%;
+
+  }
+  .faq-section {
+    margin: 62px 0px;
+  }
+  .faq-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 342px;
+
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  .arrows {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  .service-cards > .bservice-card {
+    border: none;
+  }
+
+  .overlay-text {
+    display:none
+  }
+  .hero {
+    /* background: blue; */
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-wrapper {
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 24px;
+    width: 342px;
+    height: 700px;
+
+  }
+  .hero h3 {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  /* .hero p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 127%;
+    letter-spacing: 0%;
+    text-align: center;
+
+  } */
+  .btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+  }
+  .hero .typing {
+    font-family: PP Neue Corp;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 107%;
+    letter-spacing: 0%;
+    text-align: center;
+    height: 153px;
+    
+  }
+  
+  .hero-paragraph {
+    /* background: yellow; */
+    text-align: center;
+    margin-top: 75px;
+    width: 328px;
+    height: 140px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 127%;
+    letter-spacing: 0%;
+    padding: 7px;
+
+  }
+
+  .service-cards {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  
+  }
+  .service-cards6 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  
+  }
+  .service-container{
+    padding: 0px 24px 0px 24px;
+  }
+  .text-service {
+    display: flex;
+    flex-direction: column;
+    /* background: blue; */
+    justify-content: space-between;
+   
+  
+  }
+  .text-service2 {
+    display: flex;
+    flex-direction: column;
+    background: blue;
+    justify-content: space-between;
+    width: 330px;
+    height: 193px;
+    gap: 24px;
+  
+  }
+  /* .text-service > h5 > span {
+    width: 76px;
+    height: 17px;
+    gap: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+  } */
+  .text-service > h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 127%;
+    letter-spacing: 0%;
+
+  }
+  .text-service2 > h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 127%;
+    letter-spacing: 0%;
+
+  }
+  .text-service > p {
+    color: #000000;
+    font-family: Instrument Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 127%;
+    letter-spacing: 0%;
+  }
+  .text-service2 > p {
+    color: #000000;
+    font-family: Instrument Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 127%;
+    letter-spacing: 0%;
+  }
+
+  .service-cards > .service-card {
+    width: 100%;
+    border-radius: 16.75px;
+    padding-top: 56.96px;
+    padding-right: 26.8px;
+    padding-bottom: 56.96px;
+    padding-left: 26.8px;
+
+    margin-top: 1rem;
+  
+    
+  }
+  .service-cards > .service-card-3 {
+    width: 100%;
+    border-radius: 16.75px;
+    padding-top: 56.96px;
+    padding-right: 26.8px;
+    padding-bottom: 56.96px;
+    padding-left: 26.8px;
+
+    margin-top: 1rem;
+  
+    
+  }
+  .service-card > h1 {
+    color: #fff;
+    /* margin-top: 115px;
+    margin-left: 50px; */
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 127%;
+    letter-spacing: 0%;      
+  }
+  .service-card > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 127%;
+    letter-spacing: 0%;
+  }
+  .service-card-3 > h1 {
+    color: #000000;
+    /* margin-top: 115px;
+    margin-left: 50px; */
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 127%;
+    letter-spacing: 0%;      
+  }
+  .service-card-3 > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 127%;
+    letter-spacing: 0%;
+  }
+  .project-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 355px;
+    /* background: pink; */
+  }
+  .project-top-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 24px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    /* background: pink; */
+  }
+  .project-text-2 {
+    font-family: PP Neue Corp;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 127%;
+    letter-spacing: 0%;
+  }
+  .project-text {
+    font-family: Instrument Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 127%;
+    letter-spacing: 0%;
+    margin-top: 24px;
+  }
+  .project-container{
+    width: 100%;
+    padding: 24px;
+    /* background: green; */
+  }
+  .top-right {
+    height: 131px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-item: center;
+    margin-top: 42px;
+    /* background: blue; */
+  
+  }
+  .top-left {
+    /* background: red; */
+    width: 100%;
+  }
+  .upbox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+  
+  }
+
+  .desktop-layout {
+    display: none;
+  }
+  .mobile-layout {
+    display: flex;
+  }
+  .future-wrapper {
+    padding: 0px 24px 0px 24px;
+    margin-bottom: 4rem;
+  }
+  .footerend-wrapper {
+    width: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+  }
+  .profile-section {
+    max-width: 1000px;
+    padding: 24px;
+  }
+
+  .card-row { 
+    flex-direction: column; 
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .card-content {
+    position: static;
+    background: transparent;
+    color: #333;
+  }
+
+  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    
+    /* background:red; */
+  }
+  .card img {
+    width: 100%;            same height for all
+    object-fit: contain;
+    flex-shrink: 0;
+    height: 300px; 
+    border-radius: 25px;
+  }
+  
+  .card-content .actions button {
+    background: transparent;
+    color: #9F9C9C;
+    border: 1px solid #9F9C9C;
+  }
+  .card-row2 { 
+    flex-direction: column; 
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .card-content2 {
+    position: static;
+    background: transparent;
+    color: #333;
+    padding: 0px;
+    margin-top: 12px;
+    background: pink;
+  }
+
+  .card2 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 100%;
+    background:red;
+  }
+
+  .card2 img {
+    width: 100%;            same height for all
+    object-fit: contain;
+    flex-shrink: 0;
+    height: 300px; 
+    border-radius: 20px;
+  }
+  
+  .card-content2 .actions button {
+    background: transparent;
+    color: #9F9C9C;
+    border: 1px solid #9F9C9C;
+  }
+  .btn-row {
+    display: flex;
+    flex-wrap: wrap;       /* wrap on small */
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
 /* Responsive font sizes */
 @media (max-width: 600px) {
+  .form-row { flex-direction: column; }
+
+  .responsive-section {
+    padding: 24px;
+    width: 100%;
+    /* background: red; */
+    height: 679px;
+    border-radius: 8px;
+  }
+  .builtresponsive-section {
+    padding: 24px;
+    width: 100%;
+    /* background: red; */
+    height: 679px;
+    border-radius: 8px;
+    margin-top: 64px;
+  }
+  .responsive-section .first-part, 
+  .builtresponsive-section .first-part {
+    font-family: PP Neue Corp;
+    color: #000000; 
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: 0%;
+    width: 342px;
+  
+  }
+  .responsive-section h1,
+  .builtresponsive-section h1 {
+    width: 342px;
+    /* width: 100%; */
+  
+  }
+  .builtresponsive-section .second-part,
+  .responsive-section .second-part {
+    font-family: PP Neue Corp;
+    color: #575757;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 127%;
+    letter-spacing: 0%;
+  
+  }
+  
+  .responsive-section p,
+  .builtresponsive-section p {
+    font-family: PP Neue Corp;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 127%;
+    letter-spacing: 0%;
+
+  }
+  .responsive-section .par {
+    font-family: Instrument Sans;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 127%;
+    letter-spacing: 0%;
+
+  }
+  .testimonial-carousel {
+    padding: 24px;
+    background: red;
+    margin-top: 64px
+  }
+  .testimonial-container {
+    margin-top: 42px;
+  }
+
+
+
   .privacy-policy {
     padding: 1rem;
   }
@@ -1972,5 +2029,144 @@ textarea { resize: vertical; min-height: 120px; }
   }
   .privacy-policy p {
     font-size: 0.95rem;
+  }
+}
+
+
+
+.faq-main {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 96px;
+  margin-bottom: 96px;
+  padding: 0px 78px;
+  display: flex;
+  gap: 3rem;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.faq-left {
+  flex: 1 1 300px;
+  background: violet;
+}
+.faq-left h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.faq-left p {
+  font-size: 1rem;
+  color: #555;
+  width: 408px;
+}
+
+
+
+.faq-right {
+  flex: 1 1 500px;
+  background: blue;
+  width: 735px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #575757;
+}
+
+.faq-question {
+  cursor: pointer;
+  padding-bottom: 24px;
+  font-family: Instrument Sans;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 127%;
+  letter-spacing: 0%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* symbol span: show + when closed, – when open */
+.faq-question .symbol::before {
+  content: "+";
+  transition: transform 0.2s ease;
+  font-family: Instrument Sans;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 127%;
+  letter-spacing: 0%;
+
+}
+.faq-item.active .faq-question .symbol::before {
+  content: "–";
+  font-family: Instrument Sans;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 127%;
+  letter-spacing: 0%;
+
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  color: #444;
+  padding: 0 0; /* no vertical padding when closed */
+  font-family: Instrument Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 127%;
+  letter-spacing: 0%;
+
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  padding: 24px 0;
+}
+
+@media (max-width: 768px) {
+
+  .faq-main {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    margin-top: 96px;
+    margin-bottom: 96px;
+    padding: 0px 24px;
+    background: red;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+  }
+  .faq-left p {
+    width: 310px;
+    font-family: Instrument Sans;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 127%;
+    letter-spacing: 0%;
+
+  }
+
+  .faq-left,
+  .faq-right {
+    flex: 1 1 100%;
+    width: 342px;
+  }
+  .faq-question {
+    cursor: pointer;
+    padding-bottom: 24px;
+    font-family: Instrument Sans;
+    font-weight: 500;
+    font-size: 16.76px;
+    line-height: 127%;
+    letter-spacing: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
