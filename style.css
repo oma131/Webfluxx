@@ -712,6 +712,11 @@
   width: 408px;
 }
 
+.workcard-wrapper {
+  margin-top: 52px;
+  margin-bottom: 96px;
+}
+
 
 /* Section container styling */
 .responsive-section {
@@ -722,6 +727,16 @@
   display: flex;
   flex-direction: column;
   width: 857px;
+
+}
+.responsive-section2 {
+  /* background:blue; */
+  /* margin: auto; */
+  padding: 0px 78px;
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
 }
 
@@ -760,10 +775,10 @@
   letter-spacing: 0%; 
   margin-top: 52px;
 }
-.responsive-section2 .par {
+.responsive-section2 p {
   font-family: Instrument Sans;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 24px;
   letter-spacing: 0%;
   margin-top: 24px;
   color: #575757;
@@ -1271,9 +1286,8 @@ textarea { resize: vertical; min-height: 120px; }
 /* 2) Card Rows */
 .card-row {
   display: flex;
-  gap: 1rem;
+  gap: 24px;
   margin-bottom: 1.5rem;
-  margin-top: 52px;
   align-items: stretch;
   padding-left: 75px;
   padding-right: 75px;
@@ -1291,7 +1305,7 @@ textarea { resize: vertical; min-height: 120px; }
 
 }
 /* “Large” and “Small” cards */
-.card-row .card-large { flex: 2; }
+.card-row .card-large { flex: 1; }
 .card-row .card-small { flex: 1; }
 .card-row2 .card-1 { flex: 1; }
 .card-row2 .card-2 { flex: 1; }
@@ -1332,7 +1346,7 @@ textarea { resize: vertical; min-height: 120px; }
   left: 0;
   /* background: rgba(0,0,0,0.5); */
   color: #fff;
-  padding: 1rem;
+  padding: 35px;
   width: 100%;
 }
 
@@ -1496,6 +1510,11 @@ textarea { resize: vertical; min-height: 120px; }
   }
   .btn-wrap, .lta-btn {
     display: block;
+  }
+
+  .workcard-wrapper {
+    margin-top: 42px;
+    margin-bottom: 64px;
   }
   
   /* Show the menu toggle */
@@ -1936,6 +1955,8 @@ textarea { resize: vertical; min-height: 120px; }
     position: static;
     background: transparent;
     color: #333;
+    padding: 0px;
+    margin-top: 12px;
   }
 
   .card {
@@ -2020,8 +2041,6 @@ textarea { resize: vertical; min-height: 120px; }
     padding: 24px;
     width: 100%;
     /* background: red; */
-    border-radius: 8px;
-    gap: 24px;
     margin: auto;
 
   }
@@ -2071,7 +2090,7 @@ textarea { resize: vertical; min-height: 120px; }
     letter-spacing: 0%;
 
   }
-  .responsive-section2 .par {
+  .responsive-section2 p {
     font-family: Instrument Sans;
     font-weight: 500;
     font-size: 22px;
