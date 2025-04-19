@@ -113,21 +113,19 @@
   
 
    /* Hero section styling */
-    .hero {
+  .hero {
     max-width: 100%;
     height: 100vh;
-    background: #ffffff;
+    /* background: #ffffff; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
-
   }
   .hero-wrapper {
     width: 960px;
-
+    /* background: blue; */
   }
   /* .hero h3 {
     font-size: 18px;
@@ -145,7 +143,7 @@
     text-align: center;
     margin: auto;
     margin-top: 16px;
-    /* background: blue; */
+    background: pink;
     
   }
   .hero-paragraph {
@@ -728,68 +726,14 @@
   width: 857px;
 
 }
-.wresponsive-section {
-  /* background:blue; */
-  /* margin: auto; */
-  padding: 0px 78px;
-  margin-top: 96px;
-  margin-bottom: 52px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 857px;
 
-}
-.responsive-section2 {
-  /* background:blue; */
-  width: 1280px;
-  margin: auto;
-  margin-top: 96px;
-  margin-bottom: 52px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.builtresponsive-section {
-  /* background:blue; */
-  padding-left: 78px;
-  margin-top: 96px;
-  width: 856px;
-  height: 984px;
-  gap: 52px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.responsive-section5 {
-  /* background:blue; */
-  padding: 3rem;
-  width: 840px;
-  border-radius: 8px;
-}
 /* Header styling with two different colors */
 .responsive-section h1 {
   width: 543px;
   height: 162px;
 }
-.wresponsive-section h1 {
-  width: 543px;
-  height: 162px;
-}
-.responsive-section2 h1 {
-  width: 930px;
-  height: 162px;
-}
-.builtresponsive-section h1 {
-  width: 543px;
-  height: 162px;
-}
-.responsive-section5 .first-part,
-.responsive-section .first-part,
-.responsive-section2 .first-part,
-.builtresponsive-section .first-part {
+
+.responsive-section .first-part {
   font-family: PP Neue Corp;
   color: #000000; 
   font-weight: 500;
@@ -800,10 +744,7 @@
 
 
 }
-.responsive-section5 .second-part,
-.responsive-section .second-part,
-.responsive-section2 .second-part,
-.builtresponsive-section .second-part {
+.responsive-section .second-part {
   font-family: PP Neue Corp;
   color: #575757;
   font-weight: 500;
@@ -813,7 +754,6 @@
 
 }
 /* Paragraph styling */
-.responsive-section p,
 .builtresponsive-section p {
   font-family: PP Neue Corp;
   color: #575757;
@@ -1693,7 +1633,7 @@ textarea { resize: vertical; min-height: 120px; }
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 0px 24px;
+    /* padding: 0px 24px; */
     width: 342px;
 
   }
@@ -1726,6 +1666,8 @@ textarea { resize: vertical; min-height: 120px; }
     letter-spacing: 0%;
     text-align: center;
     width: 342px;
+    margin: auto;
+
     
   }
   
