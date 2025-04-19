@@ -813,7 +813,6 @@
 
 }
 /* Paragraph styling */
-.responsive-section5 p,
 .responsive-section p,
 .builtresponsive-section p {
   font-family: PP Neue Corp;
@@ -832,6 +831,13 @@
   margin-top: 24px;
   color: #575757;
   
+}
+.two-res {
+  font-family: Instrument Sans;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 127%;
+  letter-spacing: 0%;
 }
 
 
@@ -1552,6 +1558,7 @@ textarea { resize: vertical; min-height: 120px; }
   .btn-wrap, .lta-btn {
     display: block;
   }
+  
   /* Show the menu toggle */
   .menu-toggle {
     display: block;
