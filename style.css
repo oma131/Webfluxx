@@ -12,6 +12,7 @@
 
   body {
     font-family: Instrument Sans;
+    padding-top: calc(2rem + /* approximate logo height */ 60px);
     max-width: 1400px;
     margin: auto;
   }
@@ -54,6 +55,11 @@
 
   /* Navbar Container */
   .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
     display: flex;
     align-items: center;
     justify-content: space-between;
