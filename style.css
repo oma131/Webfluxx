@@ -158,6 +158,12 @@
     margin-top: 96px;
     /* background:pink; */
   }
+  .service-container3{
+    /* height: 100vh; */
+    padding: 0px 75px 0px 75px;
+    margin-top: 52px;
+    /* background:pink; */
+  }
 
   .vect-head{
     color: #575757;
@@ -336,14 +342,14 @@
   display: flex;
   justify-content: space-between;
   gap: 26px;
-  margin-top: 52px
+  /* margin-top: 52px */
 
 }
 .service-cards6 {
   /* background: yellow; */
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 52px;
 
 }
@@ -377,32 +383,36 @@
   border: 1px solid black;
 }
 .bservice-card {
-  /* background: yellow; */
+  /* background: pink; */
   width: 412px;
-  height: 236px;
+  /* height: 214px; */
   /* padding: 32px 32px; */
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   /* background: transparent; */
   color: #000000;
   border-right: 1px solid #575757;
 }
 .bservice-card p {
   width: 263px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 127%;
-  letter-spacing: 0%;
+  font-family: Instrument Sans;
+font-weight: 400;
+font-size: 20.42px;
+line-height: 127%;
+letter-spacing: 0%;
+
 
 }
 .bservice-card h1{
-  width: 263px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 127%;
-  letter-spacing: 0%;
+  font-family: PP Neue Corp;
+font-weight: 500;
+font-size: 24px;
+line-height: 127%;
+letter-spacing: 0%;
+margin-top: 22px;
+margin-bottom: 22px;
 
 }
 .bservice-card:last-child {
@@ -535,13 +545,27 @@
 .project-top-2{
   display: flex;
   justify-content: space-between;
-  padding: 40px;
+  /* padding: 40px; */
   margin-top: 96px;
+  margin-bottom: 96px;
 }
 .top-right {
   width: 50%;
   height: 131px;
   gap: 12px;
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: center;
+  align-item: center;
+  /* background: blue; */
+
+}
+.right {
+  width: 30%;
+  height: 131px;
+  gap: 12px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -552,6 +576,11 @@
 .top-left {
   width: 50%;
   /* background: red; */
+
+}
+.left {
+  width: 70%;
+  /* background: yellow; */
 
 }
 
@@ -719,6 +748,7 @@
 
 
 /* Section container styling */
+.responsive-section2,
 .responsive-section {
   /* background:blue; */
   /* margin: auto; */
@@ -729,22 +759,25 @@
   width: 857px;
 
 }
-.responsive-section2 {
-  /* background:blue; */
-  /* margin: auto; */
+.responsive-section3 {
   padding: 0px 78px;
-  margin-top: 96px;
   display: flex;
   flex-direction: column;
-  width: 100%;
-
+  width: 857px;
+  margin-top: 96px;
 }
 
 /* Header styling with two different colors */
+
 .responsive-section h1 {
   width: 543px;
 }
+.responsive-section3 h1 {
+  width: 260px;
 
+}
+
+.responsive-section3 .first-part,
 .responsive-section .first-part {
   font-family: PP Neue Corp;
   color: #000000; 
@@ -756,6 +789,7 @@
 
 
 }
+.responsive-section3 .second-part,
 .responsive-section .second-part {
   font-family: PP Neue Corp;
   color: #575757;
@@ -784,12 +818,15 @@
   color: #575757;
   
 }
-.two-res {
+.responsive-section2 .two-res {
   font-family: Instrument Sans;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 24px;
   line-height: 127%;
   letter-spacing: 0%;
+  width: 1280px;
+  maegin-top: 52px;
+
 }
 
 
@@ -1460,6 +1497,11 @@ textarea { resize: vertical; min-height: 120px; }
   text-align: justify;
 }
 
+.service-container2{
+  padding: 0px 78px 0px 78px;
+  margin-top: 64px;
+}
+
 
 
 
@@ -1517,6 +1559,17 @@ textarea { resize: vertical; min-height: 120px; }
     margin-bottom: 64px;
   }
   
+  .responsive-section2 .two-res {
+    font-family: Instrument Sans;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 127%;
+    letter-spacing: 0%;
+
+    width: 100%;
+    maegin-top: 24px;
+  
+  }
   /* Show the menu toggle */
   .menu-toggle {
     display: block;
@@ -1631,6 +1684,23 @@ textarea { resize: vertical; min-height: 120px; }
     /* background: red; */
     width: 314px;
   }
+  .bservice-card h1{
+    font-family: PP Neue Corp;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 127%;
+    letter-spacing: 0%;
+    margin-top: 22px;
+  }
+  .bservice-card p{
+    font-family: Instrument Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 127%;
+    letter-spacing: 0%;
+    margin-top: 14px;
+
+  }
 
   .overlay-text {
     display:none
@@ -1721,6 +1791,11 @@ textarea { resize: vertical; min-height: 120px; }
   .service-container{
     padding: 0px 24px 0px 24px;
     /* background: red; */
+  }
+  .service-container3{
+    padding: 0px 24px 0px 24px;
+    /* background: red; */
+    margin-top: 12px;
   }
   .service-container2{
     padding: 0px 24px 0px 24px;
@@ -1873,12 +1948,12 @@ textarea { resize: vertical; min-height: 120px; }
   .project-top-2{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-direction: column-reverse;
-    padding: 24px;
+    /* margin: 0px 24px; */
     margin-top: 64px;
     margin-bottom: 64px;
-    /* background: pink; */
+    /* background: red; */
+    padding: 0px
   }
   .project-text-2 {
     font-family: PP Neue Corp;
@@ -1912,8 +1987,21 @@ textarea { resize: vertical; min-height: 120px; }
     /* background: blue; */
   
   }
+  .right {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background: blue; */
+    margin-top: 42px;
+  
+  }
   .top-left {
     /* background: red; */
+    width: 100%;
+  }
+  .left {
+    /* background: pink; */
     width: 100%;
   }
   .upbox {
@@ -2037,6 +2125,13 @@ textarea { resize: vertical; min-height: 120px; }
     /* background: red; */
 
   }
+  .responsive-section3 {
+    padding: 0px 24px;
+    width: 100%;
+    /* background: red; */
+    margin-top: 64px
+
+  }
   .responsive-section2 {
     padding: 24px;
     width: 100%;
@@ -2045,6 +2140,7 @@ textarea { resize: vertical; min-height: 120px; }
 
   }
   
+  .responsive-section3 .first-part,
   .responsive-section .first-part {
     font-family: PP Neue Corp;
     color: #000000; 
@@ -2062,6 +2158,7 @@ textarea { resize: vertical; min-height: 120px; }
   .responsive-section2 h1 {
     width: 246px;
   }
+  .responsive-section3 .second-part,
   .responsive-section .second-part {
     font-family: PP Neue Corp;
     color: #575757;
