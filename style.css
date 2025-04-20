@@ -772,10 +772,10 @@ margin-bottom: 22px;
 .responsive-section h1 {
   width: 543px;
 }
-.responsive-section3 h1 {
+/* .responsive-section3 h1 {
   width: 260px;
 
-}
+} */
 
 .responsive-section3 .first-part,
 .responsive-section .first-part {
@@ -1226,7 +1226,6 @@ margin-bottom: 22px;
   margin: 2rem auto;
   padding: 1.5rem;
   background: #fff;
-  border-radius: 8px;
 }
 form { display: flex; flex-direction: column; gap: 1rem; }
 
@@ -1285,6 +1284,7 @@ textarea { resize: vertical; min-height: 120px; }
   display: flex;
   justify-content: center;
   width: 100%;
+  
   /* background: red; */
 }
 .gather-para {
