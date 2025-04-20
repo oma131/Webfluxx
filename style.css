@@ -508,6 +508,14 @@ margin-bottom: 22px;
   margin: auto;
   margin-top: 42px;
 }
+.btn-gather{
+  display: flex;
+  width: 295px;
+  height: 56px;
+  gap: 14px;
+  margin-top: 42px;
+  margin-bottom: 96px;
+}
 .project-text-2 {
   font-family: PP Neue Corp;
   font-weight: 500;
@@ -1744,6 +1752,16 @@ textarea { resize: vertical; min-height: 120px; }
     width: 342px;
     margin: auto;
     margin-top: 24px;
+
+  }
+  .btn-gather{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 342px;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 64px;
 
   }
   .hero .typing {
