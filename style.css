@@ -771,7 +771,7 @@ margin-bottom: 22px;
   padding: 0px 78px;
   display: flex;
   flex-direction: column;
-  width: 857px;
+  /* width: 857px; */
   margin-top: 96px;
 }
 
@@ -780,10 +780,10 @@ margin-bottom: 22px;
 .responsive-section h1 {
   width: 543px;
 }
-/* .responsive-section3 h1 {
-  width: 260px;
+.responsive-section3 h1 {
+  width: 100%;
 
-} */
+}
 
 .responsive-section3 .first-part,
 .responsive-section .first-part {
@@ -833,7 +833,7 @@ margin-bottom: 22px;
   line-height: 127%;
   letter-spacing: 0%;
   width: 1280px;
-  maegin-top: 52px;
+  margin-top: 52px;
 
 }
 
@@ -1575,7 +1575,7 @@ textarea { resize: vertical; min-height: 120px; }
     letter-spacing: 0%;
 
     width: 100%;
-    maegin-top: 24px;
+    margin-top: 42px;
   
   }
   /* Show the menu toggle */
